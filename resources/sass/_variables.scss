@@ -1,0 +1,32 @@
+// Widths
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+// Colors
+$color-white: #ffffff;
+$color-green: #02b300;
+$color-gray: #9b9b9b;
+$color-blue: #202a37;
+$color-red: #c92c3a;
+$color-black: #000000;
+
+$color-gray-1: #3b4148;
+$color-gray-2: #273138;
+$color-gray-3: #161c21;
+$color-blue-1: #223b82;
+
+$color-facebook: #4658bc;
+$color-twitter: #0bd2ff;
+$color-linkedin: #4a90e2;
+$color-youtube: #eb6f6f;
+
+
+@font-face {
+    font-family: graphik;
+    src        : url("/fonts/Graphik-Extralight.otf");
+}
+
+// // Typography
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+$font-graphik: "graphik", "Raleway", sans-serif;
+$line-height-base: 1.6;

@@ -1,0 +1,199 @@
+.bg-white {
+    background-color: $color-white;
+}
+
+.bg-black {
+    background-color: $color-black;
+}
+
+.bg-green {
+    background-color: $color-green;
+}
+
+.bg-gray {
+    background-color: $color-gray;
+}
+
+.bg-gray-1 {
+    background-color: $color-gray-1;
+}
+
+.bg-gray-2 {
+    background-color: $color-gray-2;
+}
+
+.bg-gray-3 {
+    background-color: $color-gray-3;
+}
+
+.bg-blue {
+    background-color: $color-blue;
+}
+
+.bg-blue-1 {
+    background-color: $color-blue-1;
+}
+
+.bg-red {
+    background-color: $color-red;
+}
+
+
+
+.text-white {
+    color: $color-white;
+}
+
+.text-black {
+    color: $color-black;
+}
+
+.text-green {
+    color: $color-green;
+}
+
+.text-gray {
+    color: $color-gray;
+}
+
+.text-gray-1 {
+    color: $color-gray-1;
+}
+
+.text-gray-2 {
+    color: $color-gray-2;
+}
+
+.text-gray-3 {
+    color: $color-gray-3;
+}
+
+.text-blue {
+    color: $color-blue;
+}
+
+
+@mixin transition-color() {
+    transition-duration       : .2s;
+    transition-timing-function: linear;
+}
+
+nav.main-menu {
+    div.menu {
+        ul {
+            li {
+                &.active {
+                    a {
+                        color: $color-white;
+
+                        @include transition-color();
+
+                        span.underline {
+                            border-color: $color-green;
+                        }
+                    }
+                }
+
+                a {
+                    color: $color-gray;
+                    @include transition-color();
+
+                    &:hover {
+
+                        span.underline {
+                            border-bottom-style: solid;
+                            border-color       : $color-white;
+                            color              : $color-white;
+                        }
+                    }
+                }
+            }
+
+            &.show {
+                background-color: $color-blue;
+            }
+        }
+    }
+}
+
+.btn {
+    background-color: $color-white;
+    color           : $color-black;
+    @include transition-color();
+
+    &:hover {
+        background-color: $color-gray;
+    }
+}
+
+.btn-green {
+    background-color: $color-green;
+    color           : $color-white;
+    border-color    : $color-green;
+
+    &:hover {
+        background-color: $color-black;
+        color           : $color-green;
+    }
+}
+
+.btn-black {
+    background-color: $color-black;
+    color           : $color-green;
+    border-color    : $color-green;
+
+    &:hover {
+        background-color: $color-green;
+        color           : $color-white;
+    }
+}
+
+.link-contact {
+    color: $color-green;
+    @include transition-color();
+
+    &:hover {
+        background-color: $color-green;
+        color           : $color-white;
+    }
+}
+
+.link-facebook {
+    color: $color-facebook;
+    @include transition-color();
+
+    &:hover {
+        background-color: $color-facebook;
+        color           : $color-white;
+    }
+}
+
+.link-twitter {
+    color: $color-twitter;
+    @include transition-color();
+
+    &:hover {
+        background-color: $color-twitter;
+        color           : $color-white;
+    }
+}
+
+.link-linkedin {
+    color: $color-linkedin;
+    @include transition-color();
+
+    &:hover {
+        background-color: $color-linkedin;
+        color           : $color-white;
+    }
+}
+
+.link-youtube {
+    color: $color-youtube;
+    @include transition-color();
+
+    &:hover {
+        background-color: $color-youtube;
+        color           : $color-white;
+    }
+}
